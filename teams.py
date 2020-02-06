@@ -27,7 +27,7 @@ for team in teams:
         teamId = team['id']
         print(teamId)
 
-###### CREATE A ROOM ########
+###### CREATE A ROOM #######
 room_url = 'https://api.ciscospark.com/v1/rooms'
 room_body = {
     "title": "CBT Room",
@@ -43,7 +43,7 @@ for room in rooms:
     if room['title'] == 'CBT Room':
         roomId = room['id']
 
-#### POST A MESSAGE TO THE ROOM ####
+#### POST A MESSAGE TO THE ROOM ######
 msg_url = 'https://api.ciscospark.com/v1/messages'
 msg_body = {
     "roomId": roomId,
