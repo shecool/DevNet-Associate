@@ -17,6 +17,8 @@ user = os.getenv('user')
 passw = os.getenv('pass')
 
 dnac = api.DNACenterAPI(username=user, password=passw, base_url=url)
+
+# Get devices
 devices = dnac.devices.get_device_list()
 for device in devices['response']:
     print('-----------------------------------------')
